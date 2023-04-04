@@ -1,0 +1,55 @@
+/* Apply some basic styles to the mission list */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  li:hover {
+    background-color: #ddd;
+  }
+  
+  /* Style the mission details */
+  h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 0 0 5px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  /* Style the filter input and button */
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  

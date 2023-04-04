@@ -1,0 +1,14 @@
+<h2>Mission List</h2>
+<div>
+  <label for="yearFilter">Filter by Launch Year:</label>
+  <input type="text" id="yearFilter" [(ngModel)]="yearFilter">
+  <button (click)="applyFilter()">Apply</button>
+</div>
+<ul>
+  <li *ngFor="let launch of launches" (click)="showDetails(launch.flight_number)">
+    <h3>{{ launch.mission_name }}</h3>
+    <p>Launch Year: {{ launch.launch_year }}</p>
+    <p>Details: {{ launch.details }}</p>
+    <img [src]="launch.links.mission_patch_small" alt="Mission Patch">
+  </li>
+</ul>
